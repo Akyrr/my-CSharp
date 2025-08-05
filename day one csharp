@@ -1,0 +1,30 @@
+//Console.Write("Masukan sebuah angka: ");
+//int angka = int.Parse(Console.ReadLine());
+
+//if(angka%2==0)
+//{
+//    Console.WriteLine("angkamu adalah genap");
+//}
+//else
+//{
+//    Console.WriteLine("Angkamu adalah ganjil");
+//}
+
+string input;
+do
+{
+    Console.Write("masukan sebuah angka (atau ketik 'stop'): ");
+    input = Console.ReadLine();
+    if (input != "stop")
+    {
+        int angka = int.Parse(input);
+        if (angka % 2 == 0)
+        {
+            Console.WriteLine("angkamu adalah genap, coba lagi");
+        }
+        else
+        {
+            Console.WriteLine("angkamu adalah ganjil, coba lagi");
+        }
+    }
+} while (input != "stop");
